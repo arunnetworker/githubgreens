@@ -16,4 +16,17 @@ for person in users:
         followings[person] = get_followings(person)
         following_list = following_list + followings[person]
     except KeyError:
+        print('IndexError)
+
+	 return list_of_followings['following'][username ]
+    followings = {}
+following_list = []
+for person in users:
+    print('#####\nStarting: ' + person + '\n#####')
+    try:
+        followings[person] = get_followings(person)
+        following_list = following_list + followings[person]
+    except KeyError:
         print('IndexError')
+~
+
